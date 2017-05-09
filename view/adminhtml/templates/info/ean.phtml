@@ -1,0 +1,25 @@
+<?php
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+/**
+ * @var $block \Webto\EAN\Block\Info\Ean
+ */
+?>
+<dl class="payment-method purchase order">
+    <dt class="title"><?php echo $block->escapeHtml($block->getMethod()->getTitle()) ?></dt>
+    <dd class="content">
+        <strong><?php echo $block->escapeHtml(__('Firma / Institution')) ?></strong>
+        <span class="string"><?php echo $block->escapeHtml($block->getInfo()->getAdditionalInformation('ean_company')) ?></span>
+        <br />
+        <strong><?php echo $block->escapeHtml(__('EAN-nummer')) ?></strong>
+        <span class="number"><?php echo $block->escapeHtml($block->getInfo()->getAdditionalInformation('ean_number')) ?></span>
+        <br />
+        <strong><?php echo $block->escapeHtml(__('Rekvisitionsnummer')) ?></strong>
+        <span class="number"><?php echo $block->escapeHtml($block->getInfo()->getAdditionalInformation('ean_rekv')) ?></span>
+        <br />
+        <strong><?php echo $block->escapeHtml(__('Reference')) ?></strong>
+        <span class="number"><?php echo $block->escapeHtml($block->getInfo()->getAdditionalInformation('ean_ref')) ?></span>
+    </dd>
+</dl>
