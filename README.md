@@ -14,14 +14,7 @@ The module can be installed the following ways:
 Composer Setup
 =======================
 
-Add the repository to composer.json repositores
-
-```
-"magento2-ean": {
-    "type": "vcs",
-    "url": "git@github.com:webtodk/magento2-ean.git"
-}
-```
+The extension is available in the Composer package repository.
 
 ```
 composer require webto/magento2-ean
