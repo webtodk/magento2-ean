@@ -49,10 +49,10 @@ class EAN extends \Magento\Payment\Model\Method\AbstractMethod
         }
 
         $info = $this->getInfoInstance();
-        $info->setAdditionalInformation('ean_number', $additionalData['ean_number']);
-		$info->setAdditionalInformation('ean_ref', $additionalData['ean_ref']);
-		$info->setAdditionalInformation('ean_rekv', $additionalData['ean_rekv']);
-		$info->setAdditionalInformation('ean_company', $additionalData['ean_company']);
+        $info->setAdditionalInformation('ean_number', $additionalData['ean_number'] ?? '');
+	$info->setAdditionalInformation('ean_ref', $additionalData['ean_ref'] ?? '');
+	$info->setAdditionalInformation('ean_rekv', $additionalData['ean_rekv'] ?? '');
+	$info->setAdditionalInformation('ean_company', $additionalData['ean_company'] ?? '');
 
         return $this;
     }
